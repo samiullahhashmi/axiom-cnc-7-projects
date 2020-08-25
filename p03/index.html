@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video PLayer - Made by Samiullah</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css"> 
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="main-h1">Custom Video Player</h1>
+        <h2 class="main-h2">Made By Samiulah Hashmi</h2>
+    </div>
+        
+<!-- main section -->
+
+    <div id="main">
+      <div id="effect">
+          <img id="curtain1" src="curtain1.png"/>
+          <img id="curtain2" src="curtain2.png"/>
+      </div>  
+         <div id="videoPanel">
+            <video id="myVideo" width="625" height="400" src="652333414.mp4" poster="poster.png"></video>
+        </div>     
+        
+        <div id="controls">
+            <div id="seek-bar">
+                <div id="fill" onclick="moveVid()"></div>
+            </div>
+            <div class="controllers">
+                <div id="currentTime">00:00 / 00:00</div>
+
+                <div>
+                    <i onclick="revind();" id="backward-i" class="fa fa-backward revind-back-i"></i>
+                </div>
+
+                <div id="playBtn">
+                    <i id="play-i" class="inner-control-play fa fa-play"  onclick="playOrPause()" ></i>
+                </div>
+
+                <div>
+                    <i id="forward-i" onclick="forward();" class="fa fa-forward"></i>
+                </div>
+
+                <div>
+                    <i onclick="myFullScreen();" id="full-screen" class="fa fa-arrows-alt inner-control-arrows"></i>
+                </div>
+
+                <div>
+                    <i class="inner-control-speaker fa fa-volume-up" id="speaker" onclick="changeVolume();"></i>
+                </div>
+
+                <div>
+                    <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()" class="inner-control-input"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js custom file -->
+    <script src="js/app.js"></script>
+
+    <!-- js custom file 2 -->
+    <script src="js/curtain.js"></script>
+
+    <!-- jquery link -->
+    <script src="js/jquery-3.5.1.js"></script>
+
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script> 
+    <script>
+        window.onload = open_curtain();
+    </script>
+</body>
+</html>

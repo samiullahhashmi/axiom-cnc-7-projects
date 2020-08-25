@@ -1,0 +1,178 @@
+body{
+    margin: 0px;
+    background: #222233;
+    padding: 0px;
+}
+
+/* main section style */
+
+#main{
+    width: 602px;
+    height: 350px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    overflow: hidden;
+}
+
+
+
+.main-h1 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.main-h2 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+#main:hover #controls{
+    top:92%;
+    background: black;
+}
+
+/* video style */
+
+#videoPanel{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#seek-bar{
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    display: flex;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+#fill{
+    height: 10px;
+    background-color: #DBA74A;
+}
+
+#currentTime{
+    font-family: monospace;
+    font-size: 14px;
+    color:#DBA74A;
+}
+
+#playBtn{
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=range]{
+    -webkit-appearance : none !important;
+    background-color: #666;
+    height: 4px;
+    border-radius: 4px;
+    outline: none;
+    width: 90px;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance : none !important;
+    background-color: #DBA74A;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+/* controls */
+
+.the-control-system {
+    list-style-type: none;
+}
+
+.the-control-system li {
+    float: left;
+}
+
+#controls{
+    height: 40px;
+    width: 97%;
+    padding: 10px;
+    position: absolute;
+    top:107%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+    z-index: 3;
+}
+
+.inner-control-play {
+    color: #dba74a;
+    text-align: center;
+}
+
+.revind-back-i {
+    color: #dba74a;
+}
+
+#forward-i {
+    color: #dba74a;
+    cursor: pointer;
+}
+
+.inner-control-speaker {
+    color: #dba74a;
+}
+
+.inner-control-arrows {
+    color: #dba74a; 
+    font-size: 20px; 
+}
+
+.inner-control-input {
+    margin-bottom: 5px;
+}
+
+.controllers {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    z-index: -1;
+}
+
+
+
+/* curtain */
+
+#effect
+{
+    position:relative;	
+    width:100%;
+    height:150%;
+    margin:auto;
+    box-shadow:0px 0px 6px 2px #003B83;
+    z-index: 1;
+}
+#curtain1
+{
+ top:0px;
+ position:absolute;
+ left:0px;
+ height:350px;
+}
+#curtain2
+{
+ top:0px;
+ position:absolute;
+ height:350px;
+ right:0;
+}

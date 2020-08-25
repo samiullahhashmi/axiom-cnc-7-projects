@@ -124,3 +124,23 @@ p.text span {
     align-items: center;
     justify-content: center;
 }
+
+.h1-span {
+    color: #dc3545;
+    font-weight: 400;
+}
+
+.starting-text {
+    background: linear-gradient(90deg, transperant, 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        left: 110%;
+    }
+
+    100% {
+        left: -25%;
+    }
+}
