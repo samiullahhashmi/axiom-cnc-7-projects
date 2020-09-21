@@ -1,0 +1,229 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --modal-duration: 2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.5s ease;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+.nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #007dfe;
+    z-index: 2;
+    transition: .5s;
+    border-left: 10px solid #104f8fca;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.toggle {
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+
+#home{
+    margin-bottom: 50px;
+}
+
+.home-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-col {
+    flex-basis: 50%;
+}
+
+.right-col img {
+    width: 100%;
+    margin-right: 100px;
+}
+
+.left-col {
+    flex-basis: 50%;
+}
+
+.home-text {
+    max-width: 450px;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: -1px;
+}
+
+p {
+    margin-bottom: -7px;
+    font-size: 18px;
+    letter-spacing: 1.25;
+    line-height: 2;
+}
+
+.common-btn {
+    margin: 30px 0;
+}
+
+.common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #007dfe;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    font-size: 13px;
+}
+
+.common-btn:hover {
+    background-color: #007dfe;
+    transition: all 0.7s ease;
+    color: white;
+}
+
+.contact {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.comm-btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #007dfe;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+}
+
+.modal-container {
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-container {
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-container.show-modal {
+    display: block;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    padding: 10px;
+    width: 100%;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

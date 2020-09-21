@@ -3,80 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Video PLayer - Made by Samiullah</title>
+    <title>Sign In</title>
 
-    <!-- custom css link -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css2/style2.css">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="css/all.min.css"> 
-    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="main-h1">Custom Video Player</h1>
-        <h2 class="main-h2">Made By Samiulah Hashmi</h2>
-    </div>
+
+    <div class="container right-panel-active" id="container">
+        <div class="form-container sign-in-container">
+            <form class="form" id="form">
+                <h1>Sign In Here</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/samiullah.hashmi.9480" target="_blank" class="social facebook-f"><i class="fab fa-facebook-f facebook"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus google-plus"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin link"></i></a>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" placeholder="Email" id="email" /> 
+                    <input type="text" placeholder="Usename" id="username" />
+                    <input type="password" placeholder="Password" id="password" />
+                    <small>Error Message</small>
+                    <a class="sign-in">Sign In</a>
+                </div>
+            </form>
+        </div>
+
         
-<!-- main section -->
-
-    <div id="main">
-      <div id="effect">
-          <img id="curtain1" src="curtain1.png"/>
-          <img id="curtain2" src="curtain2.png"/>
-      </div>  
-         <div id="videoPanel">
-            <video id="myVideo" width="625" height="400" src="652333414.mp4" poster="poster.png"></video>
-        </div>     
-        
-        <div id="controls">
-            <div id="seek-bar">
-                <div id="fill" onclick="moveVid()"></div>
-            </div>
-            <div class="controllers">
-                <div id="currentTime">00:00 / 00:00</div>
-
-                <div>
-                    <i onclick="revind();" id="backward-i" class="fa fa-backward revind-back-i"></i>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, et voluptas?</p>
+                    <button class="ghost" id="signIn">Sign In</button>
                 </div>
-
-                <div id="playBtn">
-                    <i id="play-i" class="inner-control-play fa fa-play"  onclick="playOrPause()" ></i>
-                </div>
-
-                <div>
-                    <i id="forward-i" onclick="forward();" class="fa fa-forward"></i>
-                </div>
-
-                <div>
-                    <i onclick="myFullScreen();" id="full-screen" class="fa fa-arrows-alt inner-control-arrows"></i>
-                </div>
-
-                <div>
-                    <i class="inner-control-speaker fa fa-volume-up" id="speaker" onclick="changeVolume();"></i>
-                </div>
-
-                <div>
-                    <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()" class="inner-control-input"/>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, et voluptas?</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
+    
 
-    <!-- js custom file -->
-    <script src="js/app.js"></script>
-
-    <!-- js custom file 2 -->
-    <script src="js/curtain.js"></script>
-
-    <!-- jquery link -->
-    <script src="js/jquery-3.5.1.js"></script>
+    <!-- js link -->
+    <script src="js2/app2.js"></script>
 
     <!-- font awesome -->
-    <script src="js/all.min.js"></script> 
-    <script>
-        window.onload = open_curtain();
-    </script>
+    <script src="js/all.min.js"></script>
 </body>
 </html>

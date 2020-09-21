@@ -18,7 +18,7 @@ Container.addEventListener('click', (e) => {
         updateSelectedCount();
     }
 });
-
+ 
 
 // updating the counts
 

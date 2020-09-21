@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #505562;
+  color: #fff;
+}
+.container {
+  width: 550px;
+  margin: 20px auto;
+  user-select: none;
+  overflow-x: hidden;
+  position: relative;
+  background: #222;
+  height: 600px;
+}
+
+.flip {
+  background-color: #00b386;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-top: 3px solid #222;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  position: absolute;
+  bottom: 0;
+}
+
+.header {
+  background-color: #2d2d37;
+  text-align: center;
+  padding: 1.75rem;
+}
+.header h1 {
+  font-size: 2.25rem;
+}
+.date {
+  background-color: #222;
+  text-align: right;
+  font-size: 0.75rem;
+  padding: 0.75rem 2rem 0.75rem 0;
+}
+
+
+.currency {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  margin-left: 20px;
+}
+
+.currency select {
+  padding: 10px 20px;
+  border: 1px solid lightgray;
+  font-size: 16px;
+  width: 50%;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 28px;
+  width: 40%;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.rate {
+  color: #00b386;
+  font-size: 24px;
+  text-align: center;
+}

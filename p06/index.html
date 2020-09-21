@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- custom stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+
+<section id="home">
+        <div class="container home-row">
+            <div class="left-col">
+                <div class="home-text">
+                    <h1>Our Axiom Institution</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, sed non consequatur eaque animi? Incidunt iste reiciendis at perspiciatis doloremque recusandae. Fugiat, ex! Quod dignissimos harum aliquam atque fugiat, necessitatibus nisi assumenda minima, impedit, maiores similique?</p>
+                    <button class="common-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="right-col">
+                <img src="assests/img1.jpg">
+            </div>
+        </div>
+    </section>
+
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+        <img src="assests/blue-logo.gif" id="menuBtn" class="toggle">
+
+
+        <section id="contact" class="contact">
+            <h1>Apply At Our Course</h1>
+            <button class="comm-btn" id="apply">Apply Now</button>
+        </section>
+
+
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+
+                <div class="modal-header">
+                    <h3>Apply</h3>
+                </div>
+
+                <div class="modal-content">
+                    <p>To sign up for classes please submit this form.</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Full Name" class="form-input">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Email" class="form-input">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Password" class="form-input">
+                        </div>
+                        <div>
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="password2" placeholder="Confirm Password" class="form-input">
+                        </div>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

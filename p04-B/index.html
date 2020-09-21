@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Cryptocurrency Converter</title>
+  <!-- css file link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="header">
+      <h1>Cryptocurrency Converter</h1>
+    </div>
+    <div class="date">9-16-2020</div>
+
+    <div class="currency">
+      <select id="currency-one">
+        <option value="BTC">BTC – Bitcoin</option>
+        <option value="ETH">ETH – Ethereum</option>
+        <option value="XRP">XRP – XRP</option>
+        <option value="USDT">USDT – Tether</option>
+        <option value="BCH">BCH – Bitcoin Cash</option>
+        <option value="BSV">BSV – Bitcoin SV</option>
+        <option value="LTC">LTC – Litecoin</option>
+        <option value="EOS">EOS – EOS</option>
+        <option value="BNB">BNB – Binance Coin</option>
+        <option value="XTZ">XTZ – Tezos</option>
+        <option value="-" disabled>-----------------</option>
+        <option value="USD">USD – US Dollars</option>
+        <option value="GBP">GBP – Pound Sterling</option>
+        <option value="PKR">PKR – Pakistani Rupee</option>
+      </select>
+      <input type="number" id="amount-one" placeholder="0" class="form-control">
+    </div>
+
+    <div class="currency">
+      <select id="currency-two">
+        <option value="BTC">BTC – Bitcoin</option>
+        <option value="ETH">ETH – Ethereum</option>
+        <option value="XRP">XRP – XRP</option>
+        <option value="USDT">USDT – Tether</option>
+        <option value="BCH">BCH – Bitcoin Cash</option>
+        <option value="BSV">BSV – Bitcoin SV</option>
+        <option value="LTC">LTC – Litecoin</option>
+        <option value="EOS">EOS – EOS</option>
+        <option value="BNB">BNB – Binance Coin</option>
+        <option value="XTZ">XTZ – Tezos</option>
+        <option value="-" disabled>-----------------</option>
+        <option value="USD">USD – US Dollars</option>
+        <option value="GBP">GBP – Pound Sterling</option>
+        <option value="PKR">PKR – Pakistani Rupee</option>
+      </select>
+      <input type="number" id="amount-two" placeholder="0" class="form-control">
+    </div>
+
+    <div class="flip-container">
+      <div class="rate" id="rate"></div>
+      <button class="flip" id="flip">
+        Flip
+      </button>
+    </div>
+  </div>
+
+
+
+  </div>
+  <!-- js file link -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
