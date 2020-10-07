@@ -39,6 +39,9 @@ function setMovieData(movieIndex,moviePrice) {
 }
 
 
+
+
+
 // data from local storage
 function populateUI() {
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
