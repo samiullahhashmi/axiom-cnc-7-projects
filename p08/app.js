@@ -89,7 +89,7 @@ function addMealToDOM(meal) {
 // 4. Function to get random meal
 function getRandomMeal() {
     resultHeading.innerHTML = "";
-    mealsContainer.innerHTML = "";
+    mealContainer.innerHTML = "";
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
         .then(result => result.json())
         .then(data => {
@@ -103,12 +103,12 @@ function getRandomMeal() {
 submit.addEventListener('submit', searchMeal);
 
 // 2. When Clicking a Meal
-mealContainer.addEventListener('click', e => {
+mealContainer.addEventListener('click', function(e) {
     const mealInfo = e.path.find( item => {
         if(item.classList) {
             return item.classList.contains('meal-info');
         } else {
-            return false
+            return false;
         }
     });
 
