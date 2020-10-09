@@ -61,6 +61,11 @@ body {
     border-radius: 50% !important;
 }
 
+.projects {
+	height: 100em;
+	overflow-y: scroll;
+}
+
 .card {
     background-color: #fff;
     color: black;
