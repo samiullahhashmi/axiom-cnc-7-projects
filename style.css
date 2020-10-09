@@ -235,7 +235,7 @@ body {
 
 @keyframes html {
 	to {
-		width: 90%;
+		width: 95%;
 	}
 }
 
@@ -245,7 +245,7 @@ body {
 
 @keyframes css {
 	to {
-		width: 70%;
+		width: 80%;
 	}
 }
 
@@ -255,7 +255,7 @@ body {
 
 @keyframes javascript {
 	to {
-		width: 50%;
+		width: 80%;
 	}
 }
 
@@ -265,7 +265,7 @@ body {
 
 @keyframes react {
 	to {
-		width: 30%;
+		width: 40%;
 	}
 }
 
