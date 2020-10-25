@@ -8,6 +8,7 @@ const progressBar = document.getElementById('progress');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
+
 // List of Songs
 const songList = [  'Dirilis Ertugrul', 
                     'Kurulus Osman', 
@@ -83,6 +84,21 @@ function setProgress(e) {
     const duration = audio.duration;
     audio.currentTime = ( offsetX / width ) * duration;
 }
+
+
+function changeVolume(){
+    
+    audio.volume = volumeSlider.value;
+    
+    if(volumeSlider.value == 0){
+        
+        document.getElementById('speaker').innerHTML = "<i class=\" fa fa-volume-down\" style=\"color: #dba74a;\"></i>";
+    }
+    else{
+        document.getElementById('speaker').innerHTML = "<i class=\" fa fa-volume-up\" style=\"color: #dba74a;\"></i>";
+    }
+}
+
 
 // Initial Song Load
 loadSong(songList[currentSong]);
