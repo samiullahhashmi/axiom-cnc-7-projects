@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Lyrics</title>
+
+    <!-- css custom file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <!-- h1 -->
+        <h1>Search Lyrics</h1>
+
+        <!-- form -->
+        <form id="form">
+            <input type="text" id="search" placeholder="Search by song title or artist name" />
+            <button><i class="fas fa-search"></i> Search</button>
+        </form>
+    </header>
+
+
+    <!-- results -->
+
+    <div class="container" id="results">
+        <p class="search-res">Display search results here.</p>
+    </div>
+
+    <!-- Pagination -->
+    <div class="container centered" id="pagination"></div>
+
+
+
+    <!-- js custom file link -->
+    <script src="app.js"></script>
+
+</body>
+</html>

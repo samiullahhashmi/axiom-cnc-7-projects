@@ -1,0 +1,119 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #576574;
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+header {
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+header h1 {
+    margin: 0 0 30px;
+}
+
+form {
+    position: relative;
+    max-width: 100%;
+    width: 500px; 
+}
+
+form input {
+    background-color: #54a0ff;
+    color: white;
+    border: 2px solid #54a0ff;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+form input:focus {
+    outline: 0;
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #2e86de;
+    border:0;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+}  
+
+.search-res {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 100%;
+    width: 500px;
+}
+
+.songs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.songs li {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-top: 8px;
+}
+
+.btn {
+    background-color: #2e86de;
+    border:0;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.centered button {
+    margin: 15px;
+}
+
+.lyrics-info {
+    color: white;
+    line-height: 30px;
+}
